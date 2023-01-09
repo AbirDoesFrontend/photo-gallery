@@ -6,5 +6,53 @@
 }
 
 body {
- background-color: #192a56;
+ background-color: #2f3640;
+ color: #dcdde1;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+h1 {
+ font-weight: 600;
+ margin-top: 50px;
+}
+
+header {
+ display: flex;
+ justify-content: center;
+}
+
+img {
+ width: 100%;
+}
+
+
+.cars__card {
+ width: 500px;
+ height: 500px;
+ border: 1px solid #7f8fa6;
+ text-align: center;
+ background-color: #353b48;
+}
+
+.cars {
+ display: grid;
+ grid-template-columns: repeat(3, 500px);
+ gap: 20px;
+ margin-top: 50px;
+ justify-content: center;
+}
+
+@media screen and (max-width : 1600px) {
+ .cars {
+  grid-template-columns: repeat(2 , 500px);
+ }
+}
+@media screen and (max-width : 1050px) {
+ .cars {
+  grid-template-columns: repeat(1 , 500px);
+ }
+
+ 
 }
